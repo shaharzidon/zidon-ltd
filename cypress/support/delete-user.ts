@@ -5,8 +5,6 @@
 
 import { installGlobals } from "@remix-run/node";
 
-import { prisma } from "~/db.server";
-
 installGlobals();
 
 async function deleteUser(email: string) {
