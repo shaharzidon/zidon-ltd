@@ -1,12 +1,17 @@
-import { Link } from "@remix-run/react";
-
 export default function NoteIndexPage() {
   return (
-    <p>
-      No note selected. Select a note on the left, or{" "}
-      <Link to="new" className="text-blue-500 underline">
-        create a new note.
-      </Link>
-    </p>
+    <>
+      <div>
+        <h1>שלום, מה תרצה לעשות היום?</h1>
+        <button className="bg-red-700">שיווק</button>
+        <hr></hr>
+        <button className="bg-blue-700">מכירות</button>
+        <hr></hr>
+        <button className="bg-green-700">שיחה עם צ׳אט</button>
+        <hr></hr>
+        <button className="bg-yellow-700">סטטיסטיקות</button>
+        <hr></hr>
+      </div>
+    </>
   );
 }
