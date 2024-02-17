@@ -1,7 +1,8 @@
 import type { LoaderFunctionArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import { Form, Link, NavLink, Outlet, useLoaderData } from "@remix-run/react";
+import { Form, Link, NavLink, useLoaderData } from "@remix-run/react";
 
+import { Button } from "~/components/ui/button";
 import { getNoteListItems } from "~/models/note.server";
 import { requireUserId } from "~/session.server";
 import { useUser } from "~/utils";
@@ -62,7 +63,8 @@ export default function NotesPage() {
         </div>
 
         <div className="flex-1 p-6">
-          <Outlet />
+          {/* first temporary component of shadcd/ui */}
+          <Button>Click me</Button>
         </div>
       </main>
     </div>
