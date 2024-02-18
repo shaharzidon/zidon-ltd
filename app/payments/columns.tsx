@@ -9,6 +9,8 @@ export interface Payment {
   amount: number;
   status: "נדחה" | "בתהליך" | "בוצע" | "נכשל";
   email: string;
+  date: string;
+  name: string;
 }
 
 export const columns: ColumnDef<Payment>[] = [
