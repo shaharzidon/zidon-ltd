@@ -7,6 +7,8 @@ import { getNoteListItems } from "~/models/note.server";
 import { requireUserId } from "~/session.server";
 import { useUser } from "~/utils";
 
+import Page from "~/payments/page";
+
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const userId = await requireUserId(request);
   const noteListItems = await getNoteListItems({ userId });
@@ -64,7 +66,7 @@ export default function NotesPage() {
 
         <div className="flex-1 p-6">
           {/* first temporary component of shadcd/ui */}
-          <Button>Click me</Button>
+          <Page />
         </div>
       </main>
     </div>
