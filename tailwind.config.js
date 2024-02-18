@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss"
-
-const config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -18,9 +17,6 @@ const config = {
       },
     },
     extend: {
-      fontFamily: {
-        'mono': ['IBM Plex Mono', 'monospace']
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -55,14 +51,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        warning: {
-          DEFAULT: "hsl(var(--warning))",
-          foreground: "hsl(var(--warning-foreground))",
-        },
-        button: {
-          DEFAULT: "hsl(var(--button))",
-          foreground: "hsl(var(--button-foreground))",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -86,6 +74,4 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
-
-export default config
+}
