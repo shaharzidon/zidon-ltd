@@ -26,7 +26,7 @@ async function getData(): Promise<Payment[]> {
   ];
 }
 
-export default function DemoPage() {
+export default function ServiceTable() {
   const [data, setData] = useState<Payment[]>([]);
 
   useEffect(() => {

@@ -3,7 +3,7 @@ import { json } from "@remix-run/node";
 import { Form, Link, NavLink, useLoaderData } from "@remix-run/react";
 
 import { getNoteListItems } from "~/models/note.server";
-import Page from "~/payments/page";
+import ServiceTable from "~/payments/ServiceTable";
 import { requireUserId } from "~/session.server";
 import { useUser } from "~/utils";
 
@@ -63,8 +63,7 @@ export default function NotesPage() {
         </div>
 
         <div className="flex-1 p-6">
-          {/* first temporary component of shadcd/ui */}
-          <Page />
+          <ServiceTable />
         </div>
       </main>
     </div>
