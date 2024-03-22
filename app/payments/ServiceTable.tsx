@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { Button } from "~/components/ui/button";
+
 import { Payment, columns } from "./columns";
 import { DataTable } from "./data-table";
 
@@ -40,6 +42,7 @@ export default function ServiceTable() {
   return (
     <div className="container mx-auto py-10">
       <DataTable columns={columns} data={data} />
+      <Button className="mt-4">דיווח נוסף</Button>
     </div>
   );
 }
