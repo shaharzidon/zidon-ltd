@@ -3,7 +3,7 @@ import { json } from "@remix-run/node";
 import { Form, Link, NavLink, useLoaderData } from "@remix-run/react";
 
 import { getNoteListItems } from "~/models/note.server";
-import ServiceTable from "~/payments/ServiceTable";
+import ServiceTable from "~/components/ui/ServiceTable";
 import { requireUserId } from "~/session.server";
 import { useUser } from "~/utils";
 
